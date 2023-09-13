@@ -17,6 +17,8 @@
 
 
 .header {
+    min-inline-size: 375px;
+    max-inline-size: 1440px;
     min-block-size: 100vh;
     padding: 10px;
     display: grid;
@@ -70,8 +72,10 @@
 .header__title {
     color: var(--logo-color);
     font-size: var(--logo-font-size);
+    letter-spacing: -0.02em;
     line-height: 0.825;
     text-shadow: 4px 4px 0 var(--accent-color);
+
 }
 
 .header__text {
@@ -178,13 +182,13 @@
 }
 
 .link {
-    display: inline-flex;
+    /*display: inline-flex;*/
     text-shadow: 1px 1px var(--accent-color);
     text-decoration: none;
     cursor: pointer;
-    max-block-size: 22px;
-    align-items: center;
-    border: 1px solid transparent;
+    /*max-block-size: 22px;*/
+    /*align-items: center;*/
+    /*border: 1px solid transparent;*/
 }
 
 .link:hover {
