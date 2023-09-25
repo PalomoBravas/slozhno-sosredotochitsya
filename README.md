@@ -1,0 +1,1 @@
+Проект "Сложно сосредоточиться" yandex practicum – full stack https://github.com/PalomoBravas/slozhno-sosredotochitsya
