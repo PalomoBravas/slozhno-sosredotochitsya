@@ -8,13 +8,14 @@
     grid-template-rows: repeat(3, min-content);
     gap: 40px;
     font-size: 18px;
+
+    /*по условию фон должен быть для .page и фиксироваться*/
     background-image: var(--bg-img);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }
-
 
 .header {
     min-inline-size: 375px;
@@ -25,6 +26,7 @@
     grid-template-rows: 1fr min-content 1fr;
     align-items: center;
     position: relative;
+
 }
 
 .header:before {
@@ -40,7 +42,7 @@
 .header:after {
     content: '';
     position: absolute;
-    inset: auto auto 10px 10px ;
+    inset: auto auto 10px 10px;
     inline-size: 25px;
     block-size: 25px;
     border-inline-start: 1px solid var(--menu-color);
@@ -69,7 +71,7 @@
     margin: 0 7px 0 12px
 }
 
-.header__title {
+.main__title {
     color: var(--logo-color);
     font-size: var(--logo-font-size);
     letter-spacing: -0.02em;
@@ -78,10 +80,11 @@
 
 }
 
-.header__text {
+.header__text-paragraph {
     background: var(--title-bg-color);
     color: var(--title-color);
     font-weight: bold;
+
 }
 
 .header__theme-menu {
@@ -103,7 +106,7 @@
     text-transform: lowercase;
     padding-inline: 13px;
     appearance: none;
-
+    cursor: pointer;
 }
 
 .header__theme-menu-button_active {
@@ -129,7 +132,6 @@
     gap: 50px;
     align-items: start;
 }
-
 
 .chapter {
     display: grid;
@@ -182,13 +184,9 @@
 }
 
 .link {
-    /*display: inline-flex;*/
     text-shadow: 1px 1px var(--accent-color);
     text-decoration: none;
     cursor: pointer;
-    /*max-block-size: 22px;*/
-    /*align-items: center;*/
-    /*border: 1px solid transparent;*/
 }
 
 .link:hover {
@@ -199,7 +197,7 @@
     border: 1px solid var(--text-color);
 }
 
-.chapter__gallery {
+.gallery {
     display: grid;
     gap: 10px;
 }
@@ -207,8 +205,8 @@
 .gallery__block {
     inline-size: 100%;
     background: #DB00FF;
-
 }
+
 .gallery__image {
     display: block;
     inline-size: 100%;
@@ -223,7 +221,7 @@
     display: grid;
 }
 
-.footer .header__title {
+.footer .main__title {
     margin: auto auto;
 }
 
@@ -240,11 +238,17 @@
 .footer:after {
     content: '';
     position: absolute;
-    inset: auto auto 10px 10px ;
+    inset: auto auto 10px 10px;
     inline-size: 25px;
     block-size: 25px;
     border-inline-start: 1px solid var(--menu-color);
     border-block-end: 1px solid var(--menu-color);
+}
+
+.line-break {
+    display: inline-block;
+    background: #F1B2CE;
+    padding-inline-end: 10vw;
 }
 
 
@@ -275,20 +279,21 @@
         inset: 23px 19px auto auto;
     }
 
-    .header__title {
+    .main__title {
         margin-inline-start: -20px;
     }
 
-    .header__text {
+    .header__text-paragraph {
         inline-size: 50%;
         justify-self: end;
         align-items: center;
-
     }
+
     .chapter {
         gap: 25px;
 
     }
+
     .chapter__paragraph {
         gap: 10px;
     }
@@ -302,7 +307,7 @@
         max-inline-size: calc((100% - 40px) / 3);
     }
 
-    .chapter__gallery {
+    .gallery {
         margin-block-start: 8px;
         gap: 20px;
         grid-template-rows: repeat(3, min-content);
@@ -338,7 +343,6 @@
         font-size: clamp(7.5rem, 0.5625 + 14.4531, 9.8125rem);
     }
 
-
     .footer:before {
         inset: 20px 20px auto auto;
     }
@@ -346,6 +350,7 @@
     .footer:after {
         inset: auto auto 20px 20px;
     }
+
 }
 
 @media (min-width: 1024px) {
@@ -368,11 +373,7 @@
         grid-template-columns: repeat(3, 1fr);
         align-items: start;
     }
-
 }
-
-
-
 
 
 
