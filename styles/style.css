@@ -71,7 +71,7 @@
     margin: 0 7px 0 12px
 }
 
-.main__title {
+.logo {
     color: var(--logo-color);
     font-size: var(--logo-font-size);
     letter-spacing: -0.02em;
@@ -150,6 +150,10 @@
 
 }
 
+.short {
+    inline-size: 80%;
+}
+
 .chapter__paragraph {
     display: grid;
     gap: 10px;
@@ -221,7 +225,7 @@
     display: grid;
 }
 
-.footer .main__title {
+.footer .logo {
     margin: auto auto;
 }
 
@@ -279,7 +283,7 @@
         inset: 23px 19px auto auto;
     }
 
-    .main__title {
+    .logo {
         margin-inline-start: -20px;
     }
 
@@ -291,7 +295,10 @@
 
     .chapter {
         gap: 25px;
+    }
 
+    .short {
+        inline-size: 90%;
     }
 
     .chapter__paragraph {
@@ -372,6 +379,10 @@
         gap: 20px;
         grid-template-columns: repeat(3, 1fr);
         align-items: start;
+    }
+
+    .short {
+        inline-size: 70%;
     }
 }
 
