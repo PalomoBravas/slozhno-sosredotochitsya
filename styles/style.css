@@ -150,7 +150,7 @@
 
 }
 
-.short {
+.short-title {
     inline-size: 80%;
 }
 
@@ -297,7 +297,7 @@
         gap: 25px;
     }
 
-    .short {
+    .short-title {
         inline-size: 90%;
     }
 
@@ -381,7 +381,7 @@
         align-items: start;
     }
 
-    .short {
+    .short-title {
         inline-size: 70%;
     }
 }
